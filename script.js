@@ -1,42 +1,59 @@
-// Contador de árvores
-let contador = 0;
+// 1. Contador de Árvores Plantadas
+let arvores = 0;
+const contadorBtn = document.getElementById('contadorBtn');
+const contadorTexto = document.getElementById('contador');
 
-const botao = document.getElementById("contadorBtn");
-const numero = document.getElementById("contador");
-
-botao.addEventListener("click", function () {
-    contador++;
-    numero.textContent = contador;
+contadorBtn.addEventListener('click', () => {
+  arvores++;
+  contadorTexto.textContent = arvores;
+  
+  // Efeito rápido de clique
+  contadorBtn.style.transform = 'scale(0.95)';
+  setTimeout(() => contadorBtn.style.transform = 'scale(1)', 100);
 });
 
-// Modo escuro
-const darkMode = document.getElementById("darkMode");
-
-darkMode.addEventListener("click", function () {
-    document.body.classList.toggle("dark");
-});
-
-// Quiz
+// 2. Sistema do Quiz
 function respostaCorreta() {
-    document.getElementById("resultado").textContent =
-        "✅ Parabéns! Plantar árvores ajuda a preservar o meio ambiente.";
+  const resultado = document.getElementById('resultado');
+  resultado.textContent = "🎉 Correto! Plantar árvores reconstrói ecossistemas.";
+  resultado.style.color = "#27ae60";
+  resultado.style.fontWeight = "bold";
 }
 
 function respostaErrada() {
-    document.getElementById("resultado").textContent =
-        "❌ Resposta incorreta. O desmatamento prejudica a natureza.";
+  const resultado = document.getElementById('resultado');
+  resultado.textContent = "❌ Incorreto. O desmatamento prejudica a biodiversidade e o clima.";
+  resultado.style.color = "#e74c3c";
+  resultado.style.fontWeight = "bold";
 }
 
-// Formulário
-const formulario = document.getElementById("formulario");
+// 3. Formulário de Contato
+const formulario = document.getElementById('formulario');
+const mensagemStatus = document.getElementById('mensagem');
 
-formulario.addEventListener("submit", function (evento) {
-    evento.preventDefault();
+formulario.addEventListener('submit', (e) => {
+  e.preventDefault(); // Evita que a página recarregue
+  const nome = document.getElementById('nome').value;
+  
+  mensagemStatus.textContent = `Obrigado pelo contato, ${nome}! Mensagem enviada com sucesso. 🌱`;
+  mensagemStatus.style.color = "#27ae60";
+  mensagemStatus.style.fontWeight = "bold";
+  
+  formulario.reset(); // Limpa os campos
+});
 
-    const nome = document.getElementById("nome").value;
+// 4. Modo Escuro (Dark Mode)
+const darkModeBtn = document.getElementById('darkMode');
+let temaEscuro = false;
 
-    document.getElementById("mensagem").textContent =
-        "Obrigado, " + nome + "! Sua mensagem foi enviada com sucesso.";
-
-    formulario.reset();
+darkModeBtn.addEventListener('click', () => {
+  temaEscuro = !temaEscuro;
+  
+  if (temaEscuro) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    darkModeBtn.textContent = "☀️ Modo Claro";
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+    darkModeBtn.textContent = "🌙 Modo Escuro";
+  }
 });
