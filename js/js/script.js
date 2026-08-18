@@ -31,13 +31,17 @@ darkMode.addEventListener("click", function () {
 
 
 function respostaCorreta() {
-  document.getElementById("resultado").textContent =
+  const resultado = document.getElementById("resultado");
+
+  resultado.textContent =
     "✅ Muito bem! Plantar árvores ajuda na preservação ambiental.";
 }
 
 
 function respostaErrada() {
-  document.getElementById("resultado").textContent =
+  const resultado = document.getElementById("resultado");
+
+  resultado.textContent =
     "❌ Essa atitude prejudica o meio ambiente. Tente novamente!";
 }
 
