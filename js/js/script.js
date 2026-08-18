@@ -1,60 +1,302 @@
+// CONTADOR
 let contador = 0;
 
-const contadorBtn = document.getElementById("contadorBtn");
-const contadorTexto = document.getElementById("contador");
-
-contadorBtn.addEventListener("click", function () {
-  contador++;
-  contadorTexto.textContent = contador;
-
-  if (contador === 1) {
-    contadorBtn.textContent = "🌳 Plantar outra árvore";
-  }
-
-  if (contador >= 10) {
-    contadorBtn.textContent = "🌎 Continuar plantando!";
-  }
+document.getElementById("contadorBtn").addEventListener("click", function () {
+    contador++;
+    document.getElementById("contador").textContent = contador;
 });
 
 
-const darkMode = document.getElementById("darkMode");
+// MODO ESCURO
+document.getElementById("darkMode").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
 
-darkMode.addEventListener("click", function () {
-  document.body.classList.toggle("dark");
-
-  if (document.body.classList.contains("dark")) {
-    darkMode.textContent = "☀️ Modo Claro";
-  } else {
-    darkMode.textContent = "🌙 Modo Escuro";
-  }
+    if (document.body.classList.contains("dark")) {
+        this.textContent = "☀️ Modo Claro";
+    } else {
+        this.textContent = "🌙 Modo Escuro";
+    }
 });
 
 
+// QUIZ
 function respostaCorreta() {
-  const resultado = document.getElementById("resultado");
-
-  resultado.textContent =
-    "✅ Muito bem! Plantar árvores ajuda na preservação ambiental.";
+    document.getElementById("resultado").textContent =
+        "✅ Correto! Plantar árvores ajuda a preservar o meio ambiente.";
 }
-
 
 function respostaErrada() {
-  const resultado = document.getElementById("resultado");
-
-  resultado.textContent =
-    "❌ Essa atitude prejudica o meio ambiente. Tente novamente!";
+    document.getElementById("resultado").textContent =
+        "❌ Errado! O desmatamento prejudica o meio ambiente.";
 }
 
 
-const formulario = document.getElementById("formulario");
+// FORMULÁRIO
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-formulario.addEventListener("submit", function (event) {
-  event.preventDefault();
+    const nome = document.getElementById("nome").value;
 
-  const nome = document.getElementById("nome").value;
+    document.getElementById("mensagem").textContent =
+        "🌱 Obrigado, " + nome + "! Sua mensagem foi enviada.";
 
-  document.getElementById("mensagem").textContent =
-    "🌱 Obrigado, " + nome + "! Sua mensagem foi enviada com sucesso.";
+    this.reset();
+});// CONTADOR
+let contador = 0;
 
-  formulario.reset();
+document.getElementById("contadorBtn").addEventListener("click", function () {
+    contador++;
+    document.getElementById("contador").textContent = contador;
+});
+
+
+// MODO ESCURO
+document.getElementById("darkMode").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        this.textContent = "☀️ Modo Claro";
+    } else {
+        this.textContent = "🌙 Modo Escuro";
+    }
+});
+
+
+// QUIZ
+function respostaCorreta() {
+    document.getElementById("resultado").textContent =
+        "✅ Correto! Plantar árvores ajuda a preservar o meio ambiente.";
+}
+
+function respostaErrada() {
+    document.getElementById("resultado").textContent =
+        "❌ Errado! O desmatamento prejudica o meio ambiente.";
+}
+
+
+// FORMULÁRIO
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+
+    document.getElementById("mensagem").textContent =
+        "🌱 Obrigado, " + nome + "! Sua mensagem foi enviada.";
+
+    this.reset();
+});// CONTADOR
+let contador = 0;
+
+document.getElementById("contadorBtn").addEventListener("click", function () {
+    contador++;
+    document.getElementById("contador").textContent = contador;
+});
+
+
+// MODO ESCURO
+document.getElementById("darkMode").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        this.textContent = "☀️ Modo Claro";
+    } else {
+        this.textContent = "🌙 Modo Escuro";
+    }
+});
+
+
+// QUIZ
+function respostaCorreta() {
+    document.getElementById("resultado").textContent =
+        "✅ Correto! Plantar árvores ajuda a preservar o meio ambiente.";
+}
+
+function respostaErrada() {
+    document.getElementById("resultado").textContent =
+        "❌ Errado! O desmatamento prejudica o meio ambiente.";
+}
+
+
+// FORMULÁRIO
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+
+    document.getElementById("mensagem").textContent =
+        "🌱 Obrigado, " + nome + "! Sua mensagem foi enviada.";
+
+    this.reset();
+});// CONTADOR
+let contador = 0;
+
+document.getElementById("contadorBtn").addEventListener("click", function () {
+    contador++;
+    document.getElementById("contador").textContent = contador;
+});
+
+
+// MODO ESCURO
+document.getElementById("darkMode").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        this.textContent = "☀️ Modo Claro";
+    } else {
+        this.textContent = "🌙 Modo Escuro";
+    }
+});
+
+
+// QUIZ
+function respostaCorreta() {
+    document.getElementById("resultado").textContent =
+        "✅ Correto! Plantar árvores ajuda a preservar o meio ambiente.";
+}
+
+function respostaErrada() {
+    document.getElementById("resultado").textContent =
+        "❌ Errado! O desmatamento prejudica o meio ambiente.";
+}
+
+
+// FORMULÁRIO
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+
+    document.getElementById("mensagem").textContent =
+        "🌱 Obrigado, " + nome + "! Sua mensagem foi enviada.";
+
+    this.reset();
+});// CONTADOR
+let contador = 0;
+
+document.getElementById("contadorBtn").addEventListener("click", function () {
+    contador++;
+    document.getElementById("contador").textContent = contador;
+});
+
+
+// MODO ESCURO
+document.getElementById("darkMode").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        this.textContent = "☀️ Modo Claro";
+    } else {
+        this.textContent = "🌙 Modo Escuro";
+    }
+});
+
+
+// QUIZ
+function respostaCorreta() {
+    document.getElementById("resultado").textContent =
+        "✅ Correto! Plantar árvores ajuda a preservar o meio ambiente.";
+}
+
+function respostaErrada() {
+    document.getElementById("resultado").textContent =
+        "❌ Errado! O desmatamento prejudica o meio ambiente.";
+}
+
+
+// FORMULÁRIO
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+
+    document.getElementById("mensagem").textContent =
+        "🌱 Obrigado, " + nome + "! Sua mensagem foi enviada.";
+
+    this.reset();
+});// CONTADOR
+let contador = 0;
+
+document.getElementById("contadorBtn").addEventListener("click", function () {
+    contador++;
+    document.getElementById("contador").textContent = contador;
+});
+
+
+// MODO ESCURO
+document.getElementById("darkMode").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        this.textContent = "☀️ Modo Claro";
+    } else {
+        this.textContent = "🌙 Modo Escuro";
+    }
+});
+
+
+// QUIZ
+function respostaCorreta() {
+    document.getElementById("resultado").textContent =
+        "✅ Correto! Plantar árvores ajuda a preservar o meio ambiente.";
+}
+
+function respostaErrada() {
+    document.getElementById("resultado").textContent =
+        "❌ Errado! O desmatamento prejudica o meio ambiente.";
+}
+
+
+// FORMULÁRIO
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+
+    document.getElementById("mensagem").textContent =
+        "🌱 Obrigado, " + nome + "! Sua mensagem foi enviada.";
+
+    this.reset();
+});// CONTADOR
+let contador = 0;
+
+document.getElementById("contadorBtn").addEventListener("click", function () {
+    contador++;
+    document.getElementById("contador").textContent = contador;
+});
+
+
+// MODO ESCURO
+document.getElementById("darkMode").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        this.textContent = "☀️ Modo Claro";
+    } else {
+        this.textContent = "🌙 Modo Escuro";
+    }
+});
+
+
+// QUIZ
+function respostaCorreta() {
+    document.getElementById("resultado").textContent =
+        "✅ Correto! Plantar árvores ajuda a preservar o meio ambiente.";
+}
+
+function respostaErrada() {
+    document.getElementById("resultado").textContent =
+        "❌ Errado! O desmatamento prejudica o meio ambiente.";
+}
+
+
+// FORMULÁRIO
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+
+    document.getElementById("mensagem").textContent =
+        "🌱 Obrigado, " + nome + "! Sua mensagem foi enviada.";
+
+    this.reset();
 });
