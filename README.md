@@ -1,4 +1,4 @@
-# 🌱 Agro Forte, Futuro Sustentável
+#  Agro Forte, Futuro Sustentável
 
 ## Concurso Agrinho 2026
 
