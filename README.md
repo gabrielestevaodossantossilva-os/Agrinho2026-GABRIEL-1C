@@ -33,12 +33,12 @@ O agronegócio é fundamental para a economia e para a produção de alimentos. 
 
 ## Funcionalidades
 
-- 🌙 Modo escuro
-- 🌳 Contador de árvores plantadas
-- ❓ Quiz sobre sustentabilidade
-- 📝 Formulário com mensagem personalizada
-- 📱 Layout responsivo
-- ✨ Efeitos visuais com CSS
+-  Modo escuro
+-  Contador de árvores plantadas
+-  Quiz sobre sustentabilidade
+-  Formulário com mensagem personalizada
+-  Layout responsivo
+-  Efeitos visuais com CSS
 
 ---
 
