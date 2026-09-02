@@ -3,132 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agro Forte, Futuro Sustentável</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Agrinho 2026</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>🌱 Agro Forte, Futuro Sustentável</h1>
-  <p>Equilíbrio entre produção e meio ambiente</p>
-
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#beneficios">Benefícios</a>
-    <a href="#quiz">Quiz</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <button id="darkMode">🌙 Modo Escuro</button>
+  <h1>Agro forte, futuro sustentável</h1>
+  <p>Equilíbrio entre produção e meio ambiente.</p>
 </header>
 
-<section id="inicio" class="hero">
-  <h2>Produzir hoje para preservar o amanhã</h2>
+<nav>
+  <a href="#agro">Agro</a>
+  <a href="#acoes">Ações</a>
+  <a href="#futuro">Futuro</a>
+</nav>
 
-  <p>
-    A agricultura sustentável mostra que é possível aumentar a produção de alimentos,
-    proteger o meio ambiente e garantir qualidade de vida para as futuras gerações.
-  </p>
+<main>
 
-  <button id="contadorBtn">🌳 Plantar uma árvore</button>
+  <section id="agro">
+    <h2>O que é o agro sustentável?</h2>
 
-  <h3>Árvores plantadas: <span id="contador">0</span></h3>
-</section>
+    <img src="img/campo.jpg" alt="Plantação">
 
-<section id="sobre">
-  <h2>Sobre o Projeto</h2>
+    <p>
+      O agro sustentável cuida da natureza enquanto produz alimentos.
+      Assim podemos ter comida e um meio ambiente mais saudável.
+    </p>
+  </section>
 
-  <p>
-    O objetivo deste projeto é conscientizar a população sobre a importância do
-    equilíbrio entre produção agrícola e preservação ambiental.
-  </p>
+  <section id="acoes">
+    <h2>O que podemos fazer?</h2>
 
-  <p>
-    Com tecnologias modernas, reflorestamento e uso responsável da água, é possível
-    fortalecer o agronegócio sem comprometer o futuro do planeta.
-  </p>
-</section>
+    <ul>
+      <li>Economizar água.</li>
+      <li>Reciclar o lixo.</li>
+      <li>Plantar árvores.</li>
+      <li>Cuidar dos rios e das florestas.</li>
+    </ul>
+  </section>
 
-<section id="beneficios">
+  <section id="futuro">
+    <h2>Tamanho da letra</h2>
 
-<h2>Benefícios</h2>
+    <label>Escolha um tamanho:</label>
 
-<div class="cards">
+    <div class="botoes">
+      <button onclick="diminuirFonte()">A-</button>
+      <button onclick="aumentarFonte()">A+</button>
+    </div>
 
-<div class="card">
-<h3>🌾 Produção</h3>
-<p>Maior produtividade utilizando tecnologia.</p>
-</div>
+    <p>
+      Pequenas atitudes ajudam a cuidar do planeta e deixam um futuro melhor.
+    </p>
+  </section>
 
-<div class="card">
-<h3>💧 Água</h3>
-<p>Economia e reaproveitamento dos recursos hídricos.</p>
-</div>
-
-<div class="card">
-<h3>🌳 Natureza</h3>
-<p>Proteção das matas, rios e animais.</p>
-</div>
-
-<div class="card">
-<h3>🚜 Tecnologia</h3>
-<p>Drones, sensores e agricultura de precisão.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="quiz">
-
-<h2>Quiz</h2>
-
-<p>Qual atitude ajuda o meio ambiente?</p>
-
-<button onclick="respostaCorreta()">Plantar árvores</button>
-
-<button onclick="respostaErrada()">Desmatar</button>
-
-<p id="resultado"></p>
-
-</section>
-
-<section id="contato">
-
-<h2>Contato</h2>
-
-<form id="formulario">
-
-<label for="nome">Nome</label>
-
-<input
-id="nome"
-type="text"
-required>
-
-<label for="email">Email</label>
-
-<input
-id="email"
-type="email"
-required>
-
-<button type="submit">Enviar</button>
-
-</form>
-
-<p id="mensagem"></p>
-
-</section>
+</main>
 
 <footer>
-
-<p>Projeto Agrinho 2026 • Agro Forte, Futuro Sustentável</p>
-
+  <p>Projeto Agrinho 2026</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
