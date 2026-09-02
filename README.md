@@ -2,11 +2,11 @@
 
 ## Objetivo
 
-Este projeto fala sobre o agro sustentável e a importância de cuidar do meio ambiente.
+Este projeto fala sobre o agro sustentável e como cuidar do meio ambiente.
 
 ## Justificativa
 
-A natureza é importante para produzir alimentos e para a vida das pessoas. Por isso, devemos cuidar da água, do solo e das florestas.
+O meio ambiente é importante para produzir alimentos e para a vida das pessoas. Por isso devemos cuidar da água, do solo e das florestas.
 
 ## Tecnologias usadas
 
@@ -23,6 +23,8 @@ A natureza é importante para produzir alimentos e para a vida das pessoas. Por 
 ## Referências
 
 - Programa Agrinho.
-- Imagem da plantação usada para o tema do projeto.
+- Imagem de plantação usada no projeto.
+
+#agrinho2026
 
 #agrinho2026
