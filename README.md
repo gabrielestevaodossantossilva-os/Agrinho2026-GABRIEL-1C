@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Este projeto fala sobre o agro sustentável e como cuidar do meio ambiente.
+Esse projeto fala sobre o agro sustentável e como cuidar do meio ambiente.
 
 ## Justificativa
 
