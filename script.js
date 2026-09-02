@@ -1,56 +1,13 @@
-let contador = 0;
+// Altera o tamanho da letra da página.
 
-const contadorBtn = document.getElementById("contadorBtn");
-const contadorTexto = document.getElementById("contador");
+let tamanho = 16;
 
-contadorBtn.addEventListener("click", function () {
-  contador++;
-  contadorTexto.textContent = contador;
-
-  if (contador === 1) {
-    contadorBtn.textContent = "🌳 Plantar outra árvore";
-  }
-
-  if (contador >= 10) {
-    contadorBtn.textContent = "🌎 Continuar plantando!";
-  }
-});
-
-
-const darkMode = document.getElementById("darkMode");
-
-darkMode.addEventListener("click", function () {
-  document.body.classList.toggle("dark");
-
-  if (document.body.classList.contains("dark")) {
-    darkMode.textContent = "☀️ Modo Claro";
-  } else {
-    darkMode.textContent = "🌙 Modo Escuro";
-  }
-});
-
-
-function respostaCorreta() {
-  document.getElementById("resultado").textContent =
-    "✅ Muito bem! Plantar árvores ajuda na preservação ambiental.";
+function aumentarFonte() {
+  tamanho = tamanho + 2;
+  document.body.style.fontSize = tamanho + "px";
 }
 
-
-function respostaErrada() {
-  document.getElementById("resultado").textContent =
-    "❌ Essa atitude prejudica o meio ambiente. Tente novamente!";
+function diminuirFonte() {
+  tamanho = tamanho - 2;
+  document.body.style.fontSize = tamanho + "px";
 }
-
-
-const formulario = document.getElementById("formulario");
-
-formulario.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const nome = document.getElementById("nome").value;
-
-  document.getElementById("mensagem").textContent =
-    "🌱 Obrigado, " + nome + "! Sua mensagem foi enviada com sucesso.";
-
-  formulario.reset();
-});
