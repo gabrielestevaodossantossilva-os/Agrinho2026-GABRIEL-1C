@@ -4,6 +4,7 @@ body {
   background: #eef7ee;
   color: #333;
   font-size: 16px;
+  line-height: 1.6;
 }
 
 header {
@@ -24,6 +25,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -48,10 +50,21 @@ img {
   border-radius: 10px;
 }
 
+form {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+}
+
 .botoes {
   display: flex;
   gap: 10px;
-  margin: 10px 0;
 }
 
 button {
